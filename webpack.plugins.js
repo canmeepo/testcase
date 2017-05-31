@@ -13,7 +13,6 @@ exports.productionPlugins = [
     minimize: true,
     debug: false
   }),
-  //  new webpack.optimize.DedupePlugin(),    // TODO: Does not work w/ webpack 2 yet... :-/
   new webpack.optimize.UglifyJsPlugin({
     compress: {
       warnings: false

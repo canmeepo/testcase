@@ -19,7 +19,6 @@ const sass = require('@webpack-blocks/sass');
 
 module.exports = createConfig([
   setOutput('./build/bundle.js'),
-  () => ({ target: 'node' }),
   babel(),
   sass(/* node-sass options */),
   cssModules(),
